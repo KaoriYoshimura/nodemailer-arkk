@@ -43,13 +43,13 @@ app.post('/send', (req, res) => {
         const htmlEmail = `
         <p>Hej ${req.body.name}!</p>
         <p>${req.body.openingMessage}<br>
-        Booking details;
+        Boknings detaljer:
         </p>
         <ul>
-            <li>Name: ${req.body.name}</li>
-            <li>Date: ${req.body.date}</li>
-            <li>Name: ${req.body.time}</li>
-            <li>Booking number: ${req.body.bookingId}</li>
+            <li>Namn: ${req.body.name}</li>
+            <li>Datum: ${req.body.date}</li>
+            <li>Tid: ${req.body.time}</li>
+            <li>Bokningsnummer: ${req.body.bookingId}</li>
         </ul>
         <p>${req.body.closingMessage}</p>
         <p>Restaurang ARKK</p>
